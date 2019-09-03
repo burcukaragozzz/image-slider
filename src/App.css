@@ -28,11 +28,13 @@
   text-align: center;
   height: 100%;
   width: 100%;
+
   object-fit: cover;
   transition:transform 500ms;
   transform: translateX(100%);
   position: absolute;
   left: 0;
+
 }
 .image.active {
   transform: translateX(0);
