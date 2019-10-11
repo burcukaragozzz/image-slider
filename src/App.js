@@ -24,20 +24,13 @@ class App extends Component {
   }
 
 
-  goToPrevSlide = (event) => {
-    var code = (event.which) ? event.which : event.keyCode;
-
+  goToPrevSlide = () => {
     this.setState({
       currentIndex: this.state.currentIndex - 1
     });
   }
 
   goToNextSlide = () => {
-
-    if(this.state.currentIndex === this.state.images.length - 1) {
-      return;
-    }
-
      this.setState({
       currentIndex: this.state.currentIndex + 1
     });
